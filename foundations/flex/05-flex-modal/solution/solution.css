@@ -93,3 +93,9 @@ button.cancel {
 .text {
   margin-bottom: 16px;
 }
+
+/**/
+
+* {
+  outline: 2px solid red;
+}
