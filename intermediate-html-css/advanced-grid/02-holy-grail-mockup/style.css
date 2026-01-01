@@ -7,12 +7,13 @@
   text-align: center;
 
   display: grid;
-  grid-template: 1fr 1fr 5fr 1fr / 1fr 3fr;
+  grid-template: 92px 46px 1fr 43px / 1fr 4fr;
   grid-template-areas: "header  header"
                        "sidebar nav"
                        "sidebar article"
                        "footer  footer";
   gap: 4px;
+  height: 100vh;
 }
 
 .container div {
@@ -58,8 +59,7 @@
 
   grid-area: sidebar;
   display: grid;
-  align-items: stretch;
-  gap: 16px;
+  gap: 50px;
 }
 
 .sidebar .photo {
@@ -76,6 +76,12 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+}
+
+.photo,
+.side-content {
+  display: grid;
+  align-items: center;
 }
 
 .nav {
@@ -99,7 +105,7 @@
 
   grid-area: article;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 260px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
@@ -115,7 +121,7 @@
   color: black;
   text-align: center;
 
-  height: 180px;
+  height: 200px;
 }
 
 .card p {
